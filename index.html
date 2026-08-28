@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ikeh Gabriel — Aspiring Developer & Creative Thinker">
+  <title>Ikeh Gabriel | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
+
+  <!-- NAVIGATION -->
+  <header class="header" id="home">
+    <nav class="nav container">
+      <a href="#home" class="logo"><small>MY</small> PORTFOLIO</a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-button" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </label>
+
+      <div class="nav-links">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a href="cv.pdf" class="cv-button" download>Download CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Hi, I'm</p>
+        <h1>IKEH <span>GABRIEL</span></h1>
+        <h2>Aspiring Developer &amp; Creative Thinker</h2>
+        <p class="hero-text">
+          I build clean, responsive and user-friendly websites
+          with a focus on great design and functionality.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work <span>↗</span></a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="GitHub">●</a>
+          <a href="#" aria-label="Twitter">♥</a>
+          <a href="#" aria-label="Instagram">◎</a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap reveal delay-1">
+        <!-- Replace profile.jpg with your own photo -->
+        <div class="image-frame">
+          <img src="profile.jpg" alt="Gabriel portfolio profile photo">
+          <div class="image-shine"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="container section" id="about">
+      <div class="glass about-card reveal">
+        <div class="about-copy">
+          <span class="section-tag">ABOUT ME</span>
+          <h2>About Me</h2>
+          <p>
+            I'm Gabriel, a passionate 100 level Computer Science student
+            with a strong interest in web development and UI/UX design.
+            I enjoy turning ideas into real, working digital experiences.
+          </p>
+          <a href="#contact" class="btn btn-outline small-btn">Read More</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat-card">
+            <div class="stat-icon">◉</div>
+            <strong>2+</strong>
+            <span>Projects Completed</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">◇</div>
+            <strong>100 Level</strong>
+            <span>Computer Science</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">&lt;/&gt;</div>
+            <strong>1+</strong>
+            <span>Year Learning</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">♡</div>
+            <strong>Passion</strong>
+            <span>For Technology</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="container section" id="skills">
+      <div class="glass skills-card reveal">
+        <div class="section-heading">
+          <div>
+            <span class="section-tag">WHAT I DO</span>
+            <h2>My Skills</h2>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-top"><span class="skill-logo html-logo">5</span><strong>HTML</strong><b>90%</b></div>
+            <div class="progress"><span style="--progress:90%"></span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top"><span class="skill-logo css-logo">3</span><strong>CSS</strong><b>85%</b></div>
+            <div class="progress"><span style="--progress:85%"></span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top"><span class="skill-logo js-logo">JS</span><strong>JavaScript</strong><b>75%</b></div>
+            <div class="progress"><span style="--progress:75%"></span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top"><span class="skill-logo figma-logo">F</span><strong>UI/UX Design</strong><b>80%</b></div>
+            <div class="progress"><span style="--progress:80%"></span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-top"><span class="skill-logo responsive-logo">▣</span><strong>Responsive Design</strong><b>90%</b></div>
+            <div class="progress"><span style="--progress:90%"></span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="container section" id="projects">
+      <div class="glass projects-card reveal">
+        <div class="section-heading project-heading">
+          <div>
+            <span class="section-tag">MY WORK</span>
+            <h2>Featured Projects</h2>
+          </div>
+          <label class="btn btn-outline" for="project-modal-toggle">View All Projects <span>→</span></label>
+        </div>
+
+        <input type="radio" name="project-filter" id="filter-all" checked hidden>
+        <input type="radio" name="project-filter" id="filter-web" hidden>
+        <input type="radio" name="project-filter" id="filter-ui" hidden>
+        <input type="radio" name="project-filter" id="filter-dev" hidden>
+
+        <div class="project-filters">
+          <label class="filter" for="filter-all">All</label>
+          <label class="filter" for="filter-web">Web Design</label>
+          <label class="filter" for="filter-ui">UI/UX</label>
+          <label class="filter" for="filter-dev">Development</label>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card project-item" data-category="web">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=85" alt="Modern furniture website project">
+            </div>
+            <div class="project-content">
+              <h3>Furniture Website</h3>
+              <div><span>Web Design</span><a href="#" class="project-link">View Project →</a></div>
+            </div>
+          </article>
+
+          <article class="project-card project-item" data-category="ui">
+            <div class="project-image dashboard">
+              <div class="fake-dashboard">
+                <div></div><div></div><div></div><div></div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Analytics Dashboard</h3>
+              <div><span>UI/UX Design</span><a href="#" class="project-link">View Project →</a></div>
+            </div>
+          </article>
+
+          <article class="project-card project-item" data-category="dev">
+            <div class="project-image portfolio-preview">
+              <div class="mini-site">
+                <span>Hello, I'm</span>
+                <strong>John Doe</strong>
+                <small>Developer</small>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Personal Portfolio</h3>
+              <div><span>Web Development</span><a href="#" class="project-link">View Project →</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="container section" id="contact">
+      <div class="contact-panel glass reveal">
+        <div class="contact-intro">
+          <h2>Let's work together</h2>
+          <p>I'm currently open to new opportunities and collaborations.<br>Let's build something amazing together!</p>
+          <a href="mailto:ikehgabriel@gmail.com" class="btn btn-primary">Contact Me</a>
+        </div>
+
+        <div class="contact-details">
+          <a href="mailto:ikehgabriel@gmail.com">✉ <span>ikehgabriel@gmail.com</span></a>
+          <a href="tel:+2348161234567">⌕ <span>+234 816 123 4567</span></a>
+          <span>⌖ <span>Lagos, Nigeria</span></span>
+        </div>
+
+        <div class="follow">
+          <h3>Follow Me</h3>
+          <div class="socials">
+            <a href="#">in</a><a href="#">●</a><a href="#">♥</a><a href="#">◎</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Ikeh Gabriel. All Rights Reserved.</p>
+    <a href="#home" class="top-button" aria-label="Back to top">↑</a>
+  </footer>
+
+  <!-- CSS-only project modal -->
+  <input type="checkbox" id="project-modal-toggle" class="modal-toggle" hidden>
+  <div class="modal" id="projectModal">
+    <div class="modal-box">
+      <label class="modal-close" for="project-modal-toggle">×</label>
+      <span class="section-tag">PROJECTS</span>
+      <h2>More Projects Coming Soon</h2>
+      <p>
+        This section can be expanded with your real projects, GitHub links,
+        live demos, screenshots and case studies.
+      </p>
+      <label for="project-modal-toggle" class="btn btn-primary">Close</label>
+    </div>
+  </div>
+
+  
+</body>
+</html>
